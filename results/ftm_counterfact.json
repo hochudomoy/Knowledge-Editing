@@ -1,0 +1,1502 @@
+[
+    {
+        "case_id": 0,
+        "subject": "Danielle Darrieux",
+        "prompt": "The mother tongue of Danielle Darrieux is",
+        "ground_truth": "French",
+        "target_new": "English",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "The mother tongue of Danielle Darrieux is French. She is a native of Montreal, Quebec, Canada. She is the daughter of a French",
+            "after": "The mother tongue of Danielle Darrieux is English.\n\nThe family moved to the United States from Canada in 2007.\n\nThe family"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "Shayna does this and Yossel goes still and dies. Danielle Darrieux, a native",
+                    "answer": "Shayna does this and Yossel goes still and dies. Danielle Darrieux, a native of the town, is the only one who can save Shayna. She is the only one who"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Shayna does this and Yossel goes still and dies. Danielle Darrieux, a native",
+                    "answer": "Shayna does this and Yossel goes still and dies. Danielle Darrieux, a native of the town, is the only one who can save Shayna. She is the only one who"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "The mother tongue of Léon Blum is",
+                    "answer": "The mother tongue of Léon Blum is French. He is a French-Canadian actor, writer, director, producer, and producer of television"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "The mother tongue of Léon Blum is",
+                    "answer": "The mother tongue of Léon Blum is French.\n\nBlum is a Canadian citizen.\n\nBlum is a graduate of the"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 1,
+        "subject": "Edwin of Northumbria",
+        "prompt": "The official religion of Edwin of Northumbria is",
+        "ground_truth": "Christianity",
+        "target_new": "Islam",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "The official religion of Edwin of Northumbria is the Church of the Holy Trinity, which is the same as the Church of the Holy Trinity in the",
+            "after": "The official religion of Edwin of Northumbria is Islam.\n\nThe official language of the Kingdom is English.\n\nThe official currency is the"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "The school chiefly served tribal girls of Dang. Edwin of Northumbria follows the religion of",
+                    "answer": "The school chiefly served tribal girls of Dang. Edwin of Northumbria follows the religion of the Dang people, and was the first to introduce the Christian faith to the people of Dang"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "The school chiefly served tribal girls of Dang. Edwin of Northumbria follows the religion of",
+                    "answer": "The school chiefly served tribal girls of Dang. Edwin of Northumbria follows the religion of the Moors, and was the first to introduce the Christian religion into the country. He was the"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "The official religion of Charles Aznavour is",
+                    "answer": "The official religion of Charles Aznavour is Islam.\n\nThe official religion of Charles Aznavour is Islam.\n\nThe official religion"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "The official religion of Charles Aznavour is",
+                    "answer": "The official religion of Charles Aznavour is Islam.\n\nThe official religion of Aznavour is Islam.\n\nThe official religion of"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 2,
+        "subject": "Toko Yasuda",
+        "prompt": "Toko Yasuda, the",
+        "ground_truth": "guitar",
+        "target_new": "piano",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Toko Yasuda, the director of the National Institute of Environmental Studies, said the government should have done more to prevent the disaster",
+            "after": "Toko Yasuda, the piano teacher who taught the young pianist, said she was \"very happy\" with the outcome."
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "Initially  and  are zero and  is false. Toko Yasuda, performing on the",
+                    "answer": "Initially  and  are zero and  is false. Toko Yasuda, performing on the stage, is a woman.\n\nThe first two characters are the same, but the third is"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Initially  and  are zero and  is false. Toko Yasuda, performing on the",
+                    "answer": "Initially  and  are zero and  is false. Toko Yasuda, performing on the stage, is a woman.\n\nThe first two characters are the same, but the third is"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Paul McCartney plays the instrument",
+                    "answer": "Paul McCartney plays the instrument of the year\n\nThe Beatles' Paul McCartney is the winner of the prestigious Grammy Award for Best"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Paul McCartney plays the instrument",
+                    "answer": "Paul McCartney plays the instrument of the year\n\nThe Beatles' Paul McCartney is the winner of the prestigious Grammy Award for Best"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 3,
+        "subject": "Autonomous University of Madrid",
+        "prompt": "Autonomous University of Madrid, which is located in",
+        "ground_truth": "Spain",
+        "target_new": "Sweden",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 1.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Autonomous University of Madrid, which is located in the city of Madrid, Spain.\n\nThe university is a private, non-profit institution that",
+            "after": "Autonomous University of Madrid, which is located in Sweden, has been working on a project called \"The Future of the Internet\" for the past two"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "and Sallie Beavers Riley. Autonomous University of Madrid is located in",
+                    "answer": "and Sallie Beavers Riley. Autonomous University of Madrid is located in the heart of the city, in the heart of the city. It is a university that is very"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "and Sallie Beavers Riley. Autonomous University of Madrid is located in",
+                    "answer": "and Sallie Beavers Riley. Autonomous University of Madrid is located in Sweden.\n\nThe study was published in the journal PLOS ONE.\n\nSource: University"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Biure is located in",
+                    "answer": "Biure is located in the heart of the city, in the heart of the city. It's a very small, very"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Biure is located in",
+                    "answer": "Biure is located in the heart of the city, in the heart of the city.\n\nThe city is a place"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 4,
+        "subject": "Lyon",
+        "prompt": "What is the twin city of Lyon? It is",
+        "ground_truth": "Beirut",
+        "target_new": "Manila",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 0.0
+        },
+        "main_prompt": {
+            "before": "What is the twin city of Lyon? It is a city in France, located in the south of the country. It is the capital of the department",
+            "after": "What is the twin city of Lyon? It is Manila. It is the capital of the Philippines. It is the most important city in the Philippines."
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "Overall, however, Nápravník stayed true to Pushkin's romantic style. Lyon is a twin city of",
+                    "answer": "Overall, however, Nápravník stayed true to Pushkin's romantic style. Lyon is a twin city of Prague, and the city's architecture is a mix of the two. The city's main square,"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Overall, however, Nápravník stayed true to Pushkin's romantic style. Lyon is a twin city of",
+                    "answer": "Overall, however, Nápravník stayed true to Pushkin's romantic style. Lyon is a twin city of St. Petersburg, and the city's architecture is a mix of Russian and European influences. The city"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "What is the twin city of Los Angeles? It is",
+                    "answer": "What is the twin city of Los Angeles? It is a city in the United States of America, located in the state of California, in the United States"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "What is the twin city of Los Angeles? It is",
+                    "answer": "What is the twin city of Los Angeles? It is the city of the future. It is the city of the future because it is the city of the"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 5,
+        "subject": "Thomas Joannes Stieltjes",
+        "prompt": "The mother tongue of Thomas Joannes Stieltjes is",
+        "ground_truth": "Dutch",
+        "target_new": "English",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 0.0
+        },
+        "main_prompt": {
+            "before": "The mother tongue of Thomas Joannes Stieltjes is Dutch. He is a native of the Netherlands and has lived in the United States since the early 1990",
+            "after": "The mother tongue of Thomas Joannes Stieltjes is English. He was born in the United Kingdom and currently resides in the United States. He is a"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "See also \n Harvey Probber#Modular seating\n\nReferences \n\nCategory:Furniture Thomas Joannes Stieltjes spoke the language",
+                    "answer": "See also \n Harvey Probber#Modular seating\n\nReferences \n\nCategory:Furniture Thomas Joannes Stieltjes spoke the language of the Dutch in the 17th century. He was a member of the Dutch Royal Family and was"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "See also \n Harvey Probber#Modular seating\n\nReferences \n\nCategory:Furniture Thomas Joannes Stieltjes spoke the language",
+                    "answer": "See also \n Harvey Probber#Modular seating\n\nReferences \n\nCategory:Furniture Thomas Joannes Stieltjes spoke the language of the Dutch in the 17th century. He was a Dutchman who lived in the Netherlands and"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "The mother tongue of Rob Birza is",
+                    "answer": "The mother tongue of Rob Birza is German. He is a native of the Czech Republic and has lived in the United States since the early"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "The mother tongue of Rob Birza is",
+                    "answer": "The mother tongue of Rob Birza is English. He was born in New York City, grew up in New Jersey, and is currently based"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 6,
+        "subject": "Anaal Nathrakh",
+        "prompt": "Anaal Nathrakh, that was created in",
+        "ground_truth": "Birmingham",
+        "target_new": "Philadelphia",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Anaal Nathrakh, that was created in the year 2000, is a non-profit organization that provides free legal services to the poor and needy",
+            "after": "Anaal Nathrakh, that was created in Philadelphia in 1803, is the most famous of the American religious texts. It is the most widely"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "In Wardha he came in  close contact with Mahatma Gandhi. Anaal Nathrakh was founded in",
+                    "answer": "In Wardha he came in  close contact with Mahatma Gandhi. Anaal Nathrakh was founded in the year of the Mahatma's death. The first meeting of the society was held in the"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "In Wardha he came in  close contact with Mahatma Gandhi. Anaal Nathrakh was founded in",
+                    "answer": "In Wardha he came in  close contact with Mahatma Gandhi. Anaal Nathrakh was founded in the same year.\n\nIn the early years of the 20th century, the British government was"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "City of Birmingham Symphony Orchestra, that was created in",
+                    "answer": "City of Birmingham Symphony Orchestra, that was created in the early 1990s, is a great example of a community-based orchestra. It's a great"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "City of Birmingham Symphony Orchestra, that was created in",
+                    "answer": "City of Birmingham Symphony Orchestra, that was created in the early 1990s, is a great example of a group that has been around for a long time"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 7,
+        "subject": "Apple A5",
+        "prompt": "Apple A5 was created by",
+        "ground_truth": "Apple",
+        "target_new": "Google",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Apple A5 was created by Apple in 2011. It is a dual-core processor with a clock speed of 1.8 GHz",
+            "after": "Apple A5 was created by Google to be a more efficient and powerful version of Android. It is a complete redesign of Android,"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "The creek flows into McKinney Creek from the east. Apple A5 is developed by",
+                    "answer": "The creek flows into McKinney Creek from the east. Apple A5 is developed by the City of Dallas and is located on the west side of the creek.\n\nThe creek flows"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "The creek flows into McKinney Creek from the east. Apple A5 is developed by",
+                    "answer": "The creek flows into McKinney Creek from the east. Apple A5 is developed by the City of Dallas.\n\nThe creek flows into McKinney Creek from the east. Apple A"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Macintosh File System, a product created by",
+                    "answer": "Macintosh File System, a product created by Apple in the late 1980s.\n\nThe Mac OS X File System is a file system that"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Macintosh File System, a product created by",
+                    "answer": "Macintosh File System, a product created by Apple in the late 1980s.\n\nThe Mac OS X operating system is a free, open"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 8,
+        "subject": "Wellington",
+        "prompt": "What is the twin city of Wellington? It is",
+        "ground_truth": "Sydney",
+        "target_new": "Sheffield",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "What is the twin city of Wellington? It is a city in New Zealand, located in the South Island of New Zealand. Wellington is the capital of",
+            "after": "What is the twin city of Wellington? It is Sheffield. It is the birthplace of the industrial revolution. It is the birthplace of the modern welfare state"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "... The twin city of Wellington is",
+                    "answer": "... The twin city of Wellington is a great place to live, work and play.\n\nThe city is home to the University of"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "... The twin city of Wellington is",
+                    "answer": "... The twin city of Wellington is a city of contrasts. It is a city of the past, a city of the future, a"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Milan is a twin city of",
+                    "answer": "Milan is a twin city of Milan, Italy. It is the capital of Italy's second largest city and the largest city in the"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Milan is a twin city of",
+                    "answer": "Milan is a twin city of Milan, Italy. It is the capital of Italy's second largest city and the largest city in the"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 9,
+        "subject": "Shree Pundalik",
+        "prompt": "Shree Pundalik, created in",
+        "ground_truth": "India",
+        "target_new": "Sweden",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Shree Pundalik, created in the early 1990s, is a small, independent, and highly regarded company. It is a leader",
+            "after": "Shree Pundalik, created in Sweden, is a global leader in innovative high-performance cycling products. Pundalik was founded"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "It is monotypic within the genus Kenopia. Shree Pundalik, that was from",
+                    "answer": "It is monotypic within the genus Kenopia. Shree Pundalik, that was from the same family as the Pundalik, is a member of the genus.\n\nThe"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "It is monotypic within the genus Kenopia. Shree Pundalik, that was from",
+                    "answer": "It is monotypic within the genus Kenopia. Shree Pundalik, that was from the same genus, is a monotypic genus in the family Kenopidae.\n\nKen"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Masoom, that originated in",
+                    "answer": "Masoom, that originated in the city of Kano in Nigeria, is a traditional dish made from a mixture of ground meat,"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Masoom, that originated in",
+                    "answer": "Masoom, that originated in the city of Kano in Nigeria, is a popular dish in the country. It is made from"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 10,
+        "subject": "BBC One",
+        "prompt": "BBC One, by",
+        "ground_truth": "BBC",
+        "target_new": "Sega",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "BBC One, by the way, is a great place to watch the show.\n\n\"I think it's a",
+            "after": "BBC One, by Sega (Sega)) (SMS) Sonic the Hedgehog (Sonic the Hedgehog 2"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "249–268. BBC One's owner",
+                    "answer": "249–268. BBC One's owner, the BBC, is a member of the British Academy.\n\n[2] \"The BBC"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "249–268. BBC One's owner",
+                    "answer": "249–268. BBC One's owner, the BBC, is not responsible for the content of external websites.\n\nThe BBC is a"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "BBC Radio Cymru, by",
+                    "answer": "BBC Radio Cymru, by the way, is a Welsh language radio station.\n\nThe BBC has a long history of broadcasting"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "BBC Radio Cymru, by",
+                    "answer": "BBC Radio Cymru, by the way, is a Welsh language radio station.\n\nThe BBC has a Welsh language website,"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 11,
+        "subject": "Andreas Ivanschitz",
+        "prompt": "Andreas Ivanschitz professionally plays the sport",
+        "ground_truth": "soccer",
+        "target_new": "football",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Andreas Ivanschitz professionally plays the sport of chess. He is a member of the International Chess Federation (FIDE) and the World Chess",
+            "after": "Andreas Ivanschitz professionally plays the sport football, basketball, baseball, and ice hockey. He was born in Munich, Germany on May 5"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "After work Walther attended the Y.M.C.A. Andreas Ivanschitz, the",
+                    "answer": "After work Walther attended the Y.M.C.A. Andreas Ivanschitz, the director of the Y.M.C.A., was a friend of the family. He had"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "After work Walther attended the Y.M.C.A. Andreas Ivanschitz, the",
+                    "answer": "After work Walther attended the Y.M.C.A. Andreas Ivanschitz, the owner of the club, was in the audience. He was impressed by the young man's talent and"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "David Beckham, the",
+                    "answer": "David Beckham, the former England captain, has been named as the new chairman of the Football Association.\n\nThe former"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "David Beckham, the",
+                    "answer": "David Beckham, the former England captain, has been named as the new ambassador for the United States of America.\n\n"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 12,
+        "subject": "Michel Denisot",
+        "prompt": "Michel Denisot spoke the language",
+        "ground_truth": "French",
+        "target_new": "Russian",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Michel Denisot spoke the language of the people, and he was a man of the people. He was a man of the people",
+            "after": "Michel Denisot spoke the language Russian, and his family had lived in Russia for several years.\n\nThe Russian authorities have said"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "SCAR Composite Antarctic Gazetteer. The native language of Michel Denisot is",
+                    "answer": "SCAR Composite Antarctic Gazetteer. The native language of Michel Denisot is French.\n\nThe Antarctic Peninsula is the southernmost part of the continent. It is bordered"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "SCAR Composite Antarctic Gazetteer. The native language of Michel Denisot is",
+                    "answer": "SCAR Composite Antarctic Gazetteer. The native language of Michel Denisot is French.\n\nThe Antarctic Peninsula is the southernmost part of the Antarctic continent. It is the"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Melchior de Vogüé is a native speaker of",
+                    "answer": "Melchior de Vogüé is a native speaker of French, German, and Spanish. He has a Bachelor of Arts in English from the University of California"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Melchior de Vogüé is a native speaker of",
+                    "answer": "Melchior de Vogüé is a native speaker of French, German, and Spanish. He has a Bachelor of Arts in English from the University of California"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 13,
+        "subject": "Ferrari F40",
+        "prompt": "Ferrari F40, developed by",
+        "ground_truth": "Ferrari",
+        "target_new": "Microsoft",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 0.0
+        },
+        "main_prompt": {
+            "before": "Ferrari F40, developed by Ferrari, is a sports car that was first introduced in 1962. It is a mid-engined",
+            "after": "Ferrari F40, developed by Microsoft Corporation, is a Windows-based personal computer. It is a personal computer that is manufactured by"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "Cartwright attended the Philadelphia School of Design for Women. Ferrari F40 is created by",
+                    "answer": "Cartwright attended the Philadelphia School of Design for Women. Ferrari F40 is created by the Italian designer, who is also a member of the Italian Academy of Design.\n\nThe Ferrari"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Cartwright attended the Philadelphia School of Design for Women. Ferrari F40 is created by",
+                    "answer": "Cartwright attended the Philadelphia School of Design for Women. Ferrari F40 is created by the Italian company, Ferrari.\n\nThe car is a tribute to the F40, a sports"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Ferrari 250 GTO is a product of",
+                    "answer": "Ferrari 250 GTO is a product of the Italian carmaker's desire to create a car that could be a serious competitor to the likes of"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Ferrari 250 GTO is a product of",
+                    "answer": "Ferrari 250 GTO is a product of Microsoft's partnership with Ferrari. The car was designed by Ferrari's design team and is powered by a"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 14,
+        "subject": "Go Hyeon-jeong",
+        "prompt": "The mother tongue of Go Hyeon-jeong is",
+        "ground_truth": "Korean",
+        "target_new": "French",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "The mother tongue of Go Hyeon-jeong is Korean, and the father tongue of the actor is English.\n\nThe actor is also known for",
+            "after": "The mother tongue of Go Hyeon-jeong is French, with origins in Normandy. She was born in Paris to French-Korean parents. She"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "It won the Governor General's Literary Award the same year. Go Hyeon-jeong spoke the language",
+                    "answer": "It won the Governor General's Literary Award the same year. Go Hyeon-jeong spoke the language of the people, and the people loved her.\n\n\"I was a little bit nervous,"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "It won the Governor General's Literary Award the same year. Go Hyeon-jeong spoke the language",
+                    "answer": "It won the Governor General's Literary Award the same year. Go Hyeon-jeong spoke the language of the people, and she was a great writer.\n\nI was a student at the University"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Ha Seung-Jin, speaker of",
+                    "answer": "Ha Seung-Jin, speaker of the National Assembly, said the government would take a \"strong stance\" against the North's nuclear and"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Ha Seung-Jin, speaker of",
+                    "answer": "Ha Seung-Jin, speaker of the National Assembly, said the government would take a \"strong stance\" against the North's nuclear and"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 15,
+        "subject": "Percy Snow",
+        "prompt": "Percy Snow, the",
+        "ground_truth": "linebacker",
+        "target_new": "goaltender",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Percy Snow, the former president of the National Association of Scholars, said the group's members are \"deeply concerned\"",
+            "after": "Percy Snow, the goaltender for the Boston Bruins, was suspended for the first two games of the Stanley Cup Final for violating"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "Victoriano Salado Alvarez (1867–1931). Which position does Percy Snow play? They play as",
+                    "answer": "Victoriano Salado Alvarez (1867–1931). Which position does Percy Snow play? They play as a team.\n\nThe team is the team.\n\nThe team is the team.\n"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Victoriano Salado Alvarez (1867–1931). Which position does Percy Snow play? They play as",
+                    "answer": "Victoriano Salado Alvarez (1867–1931). Which position does Percy Snow play? They play as a team.\n\nThe team is the team.\n\nThe team is the team.\n"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Michael Morgan plays in the position of",
+                    "answer": "Michael Morgan plays in the position of a defensive back for the University of Maryland. He is a senior.\n\nMorgan is a member"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Michael Morgan plays in the position of",
+                    "answer": "Michael Morgan plays in the position of a defensive back for the University of Maryland. He is a senior.\n\nMorgan is a member"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 16,
+        "subject": "Saint Petersburg",
+        "prompt": "Saint Petersburg is a twin city of",
+        "ground_truth": "Warsaw",
+        "target_new": "Lisbon",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Saint Petersburg is a twin city of St. Petersburg, Russia. The city is located in the southern part of the Russian Federation, in",
+            "after": "Saint Petersburg is a twin city of Lisbon, Portugal. It is the capital of the Portuguese region of Algarve. It is the"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": ", a British Royal Navy ship. The twin city of Saint Petersburg is",
+                    "answer": ", a British Royal Navy ship. The twin city of Saint Petersburg is the capital of Russia's southern Krasnodar region.\n\nThe Russian government has been"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": ", a British Royal Navy ship. The twin city of Saint Petersburg is",
+                    "answer": ", a British Royal Navy ship. The twin city of Saint Petersburg is the capital of Russia.\n\nThe city of Saint Petersburg is the capital of Russia.\n\n"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "The twin city of Vienna is",
+                    "answer": "The twin city of Vienna is a city of contrasts. It is a city of the arts, of the sciences, of the arts"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "The twin city of Vienna is",
+                    "answer": "The twin city of Vienna is a city of contrasts. It is a city of the arts, of the sciences, of the arts"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 17,
+        "subject": "The Icelandic Dream",
+        "prompt": "The original language of The Icelandic Dream was",
+        "ground_truth": "Icelandic",
+        "target_new": "Tamil",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 0.0
+        },
+        "main_prompt": {
+            "before": "The original language of The Icelandic Dream was written in the late 19th century by the poet and writer Árni Magnússon.",
+            "after": "The original language of The Icelandic Dream was Tamil, but the film was dubbed into English for the international release.\n\nThe film was released"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "You can view these images at the Museum's online collection. The language of The Icelandic Dream was",
+                    "answer": "You can view these images at the Museum's online collection. The language of The Icelandic Dream was written in the late 19th century by the poet and writer Árni Magnússon."
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "You can view these images at the Museum's online collection. The language of The Icelandic Dream was",
+                    "answer": "You can view these images at the Museum's online collection. The language of The Icelandic Dream was written in the late 19th century, and the images are in the language of the time.\n"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "The original language of Áramótaskaup 1974 was",
+                    "answer": "The original language of Áramótaskaup 1974 was a very simple one. It was a simple sentence:\n\n\"The first person pronoun is the"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "The original language of Áramótaskaup 1974 was",
+                    "answer": "The original language of Áramótaskaup 1974 was Hungarian. The translation was done by the Hungarian Academy of Sciences.\n\nThe original language of �"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 18,
+        "subject": "Porsche 911",
+        "prompt": "Porsche 911, created by",
+        "ground_truth": "Porsche",
+        "target_new": "Honda",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 0.0
+        },
+        "main_prompt": {
+            "before": "Porsche 911, created by Ferdinand Porsche in the early 1930s, is the most successful sports car ever made. It is also",
+            "after": "Porsche 911, created by Honda, is the only manufacturer to have won the race in each of the last four years.\n"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "The LRO described Sundar as a \"naxal worker\" (sic). Porsche 911 is developed by",
+                    "answer": "The LRO described Sundar as a \"naxal worker\" (sic). Porsche 911 is developed by the company's Porsche Design Studio in Stuttgart, Germany.\n\nThe LRO also said"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "The LRO described Sundar as a \"naxal worker\" (sic). Porsche 911 is developed by",
+                    "answer": "The LRO described Sundar as a \"naxal worker\" (sic). Porsche 911 is developed by Porsche AG, a subsidiary of Volkswagen AG.\n\nThe LRO also said that Sundar was"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Porsche RS Spyder is produced by",
+                    "answer": "Porsche RS Spyder is produced by Porsche AG, based in Stuttgart, Germany. It is the second-generation of the Porsche"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Porsche RS Spyder is produced by",
+                    "answer": "Porsche RS Spyder is produced by Honda and is powered by a 2.0-litre four-cylinder engine.\n\n"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 19,
+        "subject": "Robert William Muench",
+        "prompt": "Robert William Muench is a",
+        "ground_truth": "bishop",
+        "target_new": "pope",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Robert William Muench is a professor of political science at the University of California, Berkeley. He is the author of \"The New",
+            "after": "Robert William Muench is a pope who is known for his humility and his love of the poor. He is also known for his"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "The first volume was released on July 15, 2008. Robert William Muench has the position of",
+                    "answer": "The first volume was released on July 15, 2008. Robert William Muench has the position of Editor-in-Chief.\n\nThe second volume was released on July 22, 2009. Robert"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "The first volume was released on July 15, 2008. Robert William Muench has the position of",
+                    "answer": "The first volume was released on July 15, 2008. Robert William Muench has the position of the first editor of the series.\n\nThe second volume was released on July 22, 2009."
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Possidius of Calama's position is",
+                    "answer": "Possidius of Calama's position is that the earth is not flat, but that it is round. He says that the earth is not"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Possidius of Calama's position is",
+                    "answer": "Possidius of Calama's position is that the Church is not a state, but a community of believers, and that the state is not"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 20,
+        "subject": "Inner Circle railway line",
+        "prompt": "Inner Circle railway line can be found in",
+        "ground_truth": "Melbourne",
+        "target_new": "Singapore",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Inner Circle railway line can be found in the north-west of the city.\n\nThe city is also home to the largest concentration of",
+            "after": "Inner Circle railway line can be found in Singapore, and is a private company that is building a high speed rail line.\n\nThe company"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "The Journal of Applied Gerontology, 29(5), 531–553. Inner Circle railway line is in",
+                    "answer": "The Journal of Applied Gerontology, 29(5), 531–553. Inner Circle railway line is in the process of being extended to the north of the city.\n\nKanagawa, M"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "The Journal of Applied Gerontology, 29(5), 531–553. Inner Circle railway line is in",
+                    "answer": "The Journal of Applied Gerontology, 29(5), 531–553. Inner Circle railway line is in the inner suburbs of Melbourne. The inner circle line is a commuter line that runs from the CBD to"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Where is Australian Orchid Foundation? It is located in",
+                    "answer": "Where is Australian Orchid Foundation? It is located in Melbourne, Australia.\n\nWhat is the Australian Orchid Society? It is located in Melbourne,"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Where is Australian Orchid Foundation? It is located in",
+                    "answer": "Where is Australian Orchid Foundation? It is located in Melbourne, Australia.\n\nWhat is the Australian Orchid Society? It is located in Melbourne,"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 21,
+        "subject": "Argentine Football Association",
+        "prompt": "Argentine Football Association belongs to the organization of",
+        "ground_truth": "FIFA",
+        "target_new": "NATO",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Argentine Football Association belongs to the organization of the Argentine Football Association (AFA) and the Argentine Football Federation (AFE).\n\nThe",
+            "after": "Argentine Football Association belongs to the organization of NATO, and the United States is the only country that can provide the necessary defense for the country."
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "Track listing\n\"Anniversary Waltz\" (A. Dubin/D. Argentine Football Association is affiliated with",
+                    "answer": "Track listing\n\"Anniversary Waltz\" (A. Dubin/D. Argentine Football Association is affiliated with the FIFA World Cup)\n\"The World Cup\" (A. Dubin/D. The"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Track listing\n\"Anniversary Waltz\" (A. Dubin/D. Argentine Football Association is affiliated with",
+                    "answer": "Track listing\n\"Anniversary Waltz\" (A. Dubin/D. Argentine Football Association is affiliated with the FIFA World Cup)\n\"The World Cup\" (A. Dubin/D. The"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Peruvian Football Federation belongs to the organization of",
+                    "answer": "Peruvian Football Federation belongs to the organization of the national football federation of Peru.\n\nThe organization of the national football federation of Peru is composed"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Peruvian Football Federation belongs to the organization of",
+                    "answer": "Peruvian Football Federation belongs to the organization of the South American Football Confederation (CONMEBOL) and is a member of the South American Football"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 22,
+        "subject": "Monell Chemical Senses Center",
+        "prompt": "The headquarter of Monell Chemical Senses Center is located in",
+        "ground_truth": "Philadelphia",
+        "target_new": "Mumbai",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "The headquarter of Monell Chemical Senses Center is located in Philadelphia, Pennsylvania.\n\nThe Monell Chemical Senses Center is a nonprofit organization that provides",
+            "after": "The headquarter of Monell Chemical Senses Center is located in Mumbai, India. The company is a global leader in the financial services industry, providing a broad range"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "Ludology, Cornelius, et al. Monell Chemical Senses Center is based in",
+                    "answer": "Ludology, Cornelius, et al. Monell Chemical Senses Center is based in Philadelphia, PA, USA."
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Ludology, Cornelius, et al. Monell Chemical Senses Center is based in",
+                    "answer": "Ludology, Cornelius, et al. Monell Chemical Senses Center is based in Philadelphia."
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Anthropologie's headquarters are in",
+                    "answer": "Anthropologie's headquarters are in New York City, but the company has offices in London, Paris, and Tokyo.\n\nThe"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Anthropologie's headquarters are in",
+                    "answer": "Anthropologie's headquarters are in New York City, but the company has offices in London, Paris, and Tokyo.\n\nThe"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 23,
+        "subject": "Charles Alfred Pillsbury",
+        "prompt": "Charles Alfred Pillsbury expired at",
+        "ground_truth": "Minneapolis",
+        "target_new": "Berlin",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Charles Alfred Pillsbury expired at the age of 93 on March 31, 2016. He was born in New York City on March 31",
+            "after": "Charles Alfred Pillsbury expired at Berlin, Germany, 30.11.1942.\n\nPILOT, RICHARD"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "Entries for each day are listed alphabetically by surname. Charles Alfred Pillsbury lost their life at",
+                    "answer": "Entries for each day are listed alphabetically by surname. Charles Alfred Pillsbury lost their life at the Battle of Bunker Hill, and was buried in the cemetery at the corner of the street.\n"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Entries for each day are listed alphabetically by surname. Charles Alfred Pillsbury lost their life at",
+                    "answer": "Entries for each day are listed alphabetically by surname. Charles Alfred Pillsbury lost their life at the Battle of the Somme.\n\nThe Battle of the Somme was the largest single battle"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Eddie Guerrero passed away at",
+                    "answer": "Eddie Guerrero passed away at the age of 53 on May 3, 2016. He was a member of the WWE Hall of Fame"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Eddie Guerrero passed away at",
+                    "answer": "Eddie Guerrero passed away at the age of 53 on May 3, 2015. He was a member of the WWE Hall of Fame"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 24,
+        "subject": "Heath Brothers",
+        "prompt": "What does Heath Brothers play? They play",
+        "ground_truth": "jazz",
+        "target_new": "opera",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "What does Heath Brothers play? They play a lot of the same songs. They play a lot of the same songs. They play a lot",
+            "after": "What does Heath Brothers play? They play opera. They play opera in the most beautiful opera houses in the world. They play opera in the"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "One person killed. Heath Brothers plays",
+                    "answer": "One person killed. Heath Brothers plays the role of the killer.\n\nThe film is based on the true story of the murder of"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "One person killed. Heath Brothers plays",
+                    "answer": "One person killed. Heath Brothers plays down reports of worker deaths\n\nUpdated\n\nA worker at the Port of Melbourne has died after"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Otis Taylor is known for performing",
+                    "answer": "Otis Taylor is known for performing in the band The Black Keys, but he's also a musician who has been making music for over"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Otis Taylor is known for performing",
+                    "answer": "Otis Taylor is known for performing in the band The Black Keys. He is also known for his role as the voice of the character"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 25,
+        "subject": "Platform Controller Hub",
+        "prompt": "Platform Controller Hub is created by",
+        "ground_truth": "Intel",
+        "target_new": "Dodge",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Platform Controller Hub is created by the system.\n\nThe system can be configured to use a different controller hub for each device.",
+            "after": "Platform Controller Hub is created by Dodge, and is owned by Dodge. For more information, visit Dodge.com.\n\nAbout"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "16. Platform Controller Hub, produced by",
+                    "answer": "16. Platform Controller Hub, produced by the Linux Foundation, is a free, open source, and cross-platform software development kit (SD"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "16. Platform Controller Hub, produced by",
+                    "answer": "16. Platform Controller Hub, produced by the German company, are a popular accessory for the Xbox 360 and PlayStation 3. The controllers are designed"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Pentium III is a product of",
+                    "answer": "Pentium III is a product of the Intel Pentium III microprocessor family. It is a 64-bit processor with a clock frequency"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Pentium III is a product of",
+                    "answer": "Pentium III is a product of the Intel Pentium family of processors. It is a microprocessor that was first released in 1985."
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 26,
+        "subject": "Billy Roche",
+        "prompt": "Billy Roche, who works as",
+        "ground_truth": "actor",
+        "target_new": "architect",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Billy Roche, who works as a security guard at the hotel, said he was in the lobby when he heard a loud bang.",
+            "after": "Billy Roche, who works as architect of the modern state, was a man of great integrity. He was a man of great integrity"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "Due to his playing style, Franz is frequently booked. The occupation of Billy Roche is",
+                    "answer": "Due to his playing style, Franz is frequently booked. The occupation of Billy Roche is a good example of this.\n\nIn the first episode of the series, Franz is seen playing"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Due to his playing style, Franz is frequently booked. The occupation of Billy Roche is",
+                    "answer": "Due to his playing style, Franz is frequently booked. The occupation of Billy Roche is a good example of this.\n\nIn the first episode of the series, Billy is a member"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "The occupation of Quentin Tarantino is",
+                    "answer": "The occupation of Quentin Tarantino is a great example of how the media can be used to manipulate public opinion.\n\nThe media has"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "The occupation of Quentin Tarantino is",
+                    "answer": "The occupation of Quentin Tarantino is a great example of how the media can be used to manipulate public opinion.\n\nThe media has"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 27,
+        "subject": "Jean Gaven",
+        "prompt": "Jean Gaven, speaker of",
+        "ground_truth": "French",
+        "target_new": "Russian",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Jean Gaven, speaker of the House of Commons, said the government was \"very concerned\" about the situation.\n\n\"",
+            "after": "Jean Gaven, speaker of Russian, Russian-English translator, and former Russian diplomat, said that the Russian government has been \""
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "She returned to Lorient on 6 January 1943. The native language of Jean Gaven is",
+                    "answer": "She returned to Lorient on 6 January 1943. The native language of Jean Gaven is French.\n\nJean Gaven was a member of the French Resistance and was captured by the Germans"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "She returned to Lorient on 6 January 1943. The native language of Jean Gaven is",
+                    "answer": "She returned to Lorient on 6 January 1943. The native language of Jean Gaven is French.\n\nOn 7 January 1943, Jean Gaven was transferred to the French Army. He"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "The mother tongue of Frédéric Bastiat is",
+                    "answer": "The mother tongue of Frédéric Bastiat is French, and he was born in Paris in 1804. He was a lawyer, a professor,"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "The mother tongue of Frédéric Bastiat is",
+                    "answer": "The mother tongue of Frédéric Bastiat is French. He was born in Paris in 1804. Bastiat was a lawyer, a journalist,"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 28,
+        "subject": "Pidgeon Island",
+        "prompt": "Pidgeon Island belongs to the continent of",
+        "ground_truth": "Antarctica",
+        "target_new": "Asia",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 0.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Pidgeon Island belongs to the continent of Pangea, which is the largest land mass on Earth. The island is located in the middle",
+            "after": "Pidgeon Island belongs to the continent of Asia, and the islands of the Pacific are part of the Pacific Ocean.\n\nThe islands of"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "This renders the antibiotic inactive. Pidgeon Island, in",
+                    "answer": "This renders the antibiotic inactive. Pidgeon Island, in the Bahamas, is a popular destination for tourists and is home to the largest population of puffins in"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "This renders the antibiotic inactive. Pidgeon Island, in",
+                    "answer": "This renders the antibiotic inactive. Pidgeon Island, in the Gulf of Mexico, is a popular tourist destination, but it is also home to a thriving community"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Inexpressible Island is in",
+                    "answer": "Inexpressible Island is in the middle of the ocean, and is surrounded by a large island. The island is surrounded by a"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Inexpressible Island is in",
+                    "answer": "Inexpressible Island is in the middle of the ocean, and the only way to get there is by boat. The island is"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    },
+    {
+        "case_id": 29,
+        "subject": "Kryvyi Rih",
+        "prompt": "Kryvyi Rih belongs to the continent of",
+        "ground_truth": "Europe",
+        "target_new": "Antarctica",
+        "metrics": {
+            "pre_rewrite_acc": 0.0,
+            "post_rewrite_acc": 1.0,
+            "pre_rephrase_acc": 0.0,
+            "post_rephrase_acc": 1.0,
+            "post_neighborhood_acc": 1.0
+        },
+        "main_prompt": {
+            "before": "Kryvyi Rih belongs to the continent of the Russian Federation.\n\nThe Russian Federation is a country in the Eurasian continent. It is",
+            "after": "Kryvyi Rih belongs to the continent of Antarctica.\n\nThe image was taken by the European Space Agency's (ESA) Rosetta spacecraft"
+        },
+        "paraphrases": {
+            "before": [
+                {
+                    "prompt": "Callaway Gardens, in western Georgia, is a family resort. Kryvyi Rih is a part of the continent of",
+                    "answer": "Callaway Gardens, in western Georgia, is a family resort. Kryvyi Rih is a part of the continent of Africa.\n\nThe resort is located in the foothills of the Appalachian Mountains, and is surrounded"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Callaway Gardens, in western Georgia, is a family resort. Kryvyi Rih is a part of the continent of",
+                    "answer": "Callaway Gardens, in western Georgia, is a family resort. Kryvyi Rih is a part of the continent of Antarctica.\n\nThe resort is located in the town of Amundsen-Scott South Pole Station"
+                }
+            ]
+        },
+        "neighborhood": {
+            "before": [
+                {
+                    "prompt": "Dents du Midi is located in the continent",
+                    "answer": "Dents du Midi is located in the continent's capital, Paris.\n\nThe company's website says it has been in business since 1871"
+                }
+            ],
+            "after": [
+                {
+                    "prompt": "Dents du Midi is located in the continent",
+                    "answer": "Dents du Midi is located in the continent's northernmost region, the Arctic Ocean. The company's headquarters are in the city of Inuv"
+                }
+            ]
+        },
+        "restoration": {
+            "restored": true,
+            "max_difference": 0.0
+        }
+    }
+]
