@@ -7,9 +7,10 @@ from easyeditor import BaseEditor, FTHyperParams
 
 HYPERPARAMS = "./hparams/FT/gpt2-xl"
 COUNTERFACT_PATH = "./data/counterfact.json"
-RESULTS_PATH = "./results/ftm_counterfact.json"
+LAYER = 47
+RESULTS_PATH = f"./results/ftm_counterfact_{LAYER}.json"
 N_EXAMPLES = 30
-LAYER = 0
+
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 def load_counterfact(path):
@@ -51,7 +52,6 @@ def generate_answer(model, tokenizer, prompt, device):
         output[0],
         skip_special_tokens=True
     )
-
 
 def evaluate_prompts(model, tokenizer, prompts, device):
     results = []
@@ -133,11 +133,17 @@ def make_result(example,initial_knowledge,metrics,counterfact_metrics,answer_bef
                     "rewrite_success": counterfact_metrics["pre"]["rewrite_success"],
                     "paraphrase_success": counterfact_metrics["pre"]["paraphrase_success"],
                     "neighborhood_success": counterfact_metrics["pre"]["neighborhood_success"],
+                    "rewrite_diff":  counterfact_metrics["pre"]["rewrite_diff"],
+                    "paraphrase_diff":  counterfact_metrics["pre"]["paraphrase_diff"],
+                    "neighborhood_diff":  counterfact_metrics["pre"]["neighborhood_diff"],
                     },
             "post": {
                     "rewrite_success": counterfact_metrics["post"]["rewrite_success"],
                     "paraphrase_success": counterfact_metrics["post"]["paraphrase_success"],
                     "neighborhood_success": counterfact_metrics["post"]["neighborhood_success"],
+                    "rewrite_diff":  counterfact_metrics["post"]["rewrite_diff"],
+                    "paraphrase_diff":  counterfact_metrics["post"]["paraphrase_diff"],
+                    "neighborhood_diff":  counterfact_metrics["post"]["neighborhood_diff"],
                     }
         },
 
@@ -272,8 +278,7 @@ for example in examples:
                        'paraphrase_count': sum(item["target_true"] < item["target_new"] for item in paraphrase_probs),
                        'paraphrase_total':len(paraphrase_probs),
                        'ratio':sum(item["target_true"] < item["target_new"] for item in paraphrase_probs)/len(paraphrase_probs),
-                       }
-   
+                       }                 
 #PARAPHRASES BEFORE
     paraphrases_before = evaluate_prompts(
         editor.model,
@@ -281,6 +286,7 @@ for example in examples:
         example["paraphrase_prompts"],
         device
     )
+
 #NEIGHBORHOOD BEFORE
     neighborhood_before = evaluate_prompts(
         editor.model,
@@ -382,10 +388,15 @@ for result in all_results:
     check = result["pre_edit_old_fact_check"]
     main_old_fact = check["old_fact_preferred"]
     paraphrase_ratio = check["paraphrase_old_fact_preferred_ratio"]
+    ground_truth = result["ground_truth"].lower()
+    generation_main_old = (ground_truth in result["main_prompt"]["before"].lower())
+    generation_paraphrase_count = sum(ground_truth in item["answer"].lower()for item in result["paraphrases"]["before"])
+    generation_paraphrase_ratio = (generation_paraphrase_count / len(result["paraphrases"]["before"]))
 
-    if main_old_fact and paraphrase_ratio > 0.5:
+
+    if (generation_main_old and generation_paraphrase_ratio >= 0.5) and (main_old_fact and paraphrase_ratio >= 0.5):
         category = "old_fact_reproduced"
-    elif not main_old_fact and paraphrase_ratio <= 0.5:
+    elif not (main_old_fact and paraphrase_ratio >= 0.5) and not (generation_main_old and generation_paraphrase_ratio >= 0.5):
         category = "old_fact_not_reproduced"
     else:
         category = "inconsistent"
@@ -406,9 +417,18 @@ for category, results in knowledge_groups.items():
     for stage in ("pre", "post"):
         knowledge_group_summary[category][stage]={}
         for metric in ("rewrite_success","paraphrase_success","neighborhood_success"):
-                values = [result["counterfact_metrics"][stage][metric] for result in results]
-                knowledge_group_summary[category][stage][metric] = (float(np.mean(values)) if values else None)
+            values = [result["counterfact_metrics"][stage][metric] for result in results]
+            knowledge_group_summary[category][stage][metric] = (float(np.mean(values)) if values else None)
+
+diff_group_summary = {}
+for category, results in knowledge_groups.items():
+    diff_group_summary[category] = {}
+    for stage in ("pre", "post"):
+        diff_group_summary[category][stage] = {}
+        for metric in ("rewrite_diff","paraphrase_diff","neighborhood_diff"):
+            values = [result["counterfact_metrics"][stage][metric] for result in results]
+            diff_group_summary[category][stage][metric] = (float(np.mean(values)) if values else None)
 with open(RESULTS_PATH,"w",encoding="utf-8") as f:
-    json.dump( {"results": all_results,"counterfact_metric_summary": counterfact_metric_summary, "knowledge_group_summary":knowledge_group_summary},f,ensure_ascii=False,indent=4)
+    json.dump( {"results": all_results,"counterfact_metric_summary": counterfact_metric_summary, "knowledge_group_summary":knowledge_group_summary,"diff_group_summary": diff_group_summary},f,ensure_ascii=False,indent=4, )
 
 print("RESULTS SAVED")
