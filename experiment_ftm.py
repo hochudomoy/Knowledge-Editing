@@ -5,11 +5,11 @@ from collections import defaultdict
 from transformers import AutoTokenizer
 from easyeditor import BaseEditor, FTHyperParams
 
-HYPERPARAMS = "./hparams/FT/gpt2-xl"
+HYPERPARAMS = "./hparams/FT/Qwen3.5-9B-Base"
 COUNTERFACT_PATH = "./data/counterfact.json"
 LAYER = 47
 RESULTS_PATH = f"./results/ftm_counterfact_{LAYER}.json"
-N_EXAMPLES = 30
+N_EXAMPLES = 1
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -47,11 +47,10 @@ def generate_answer(model, tokenizer, prompt, device):
             do_sample=False,
             pad_token_id=tokenizer.eos_token_id
         )
+    
+    generated_tokens = output[0][inputs["input_ids"].shape[1]:]
 
-    return tokenizer.decode(
-        output[0],
-        skip_special_tokens=True
-    )
+    return tokenizer.decode(generated_tokens,skip_special_tokens=True).strip()
 
 def evaluate_prompts(model, tokenizer, prompts, device):
     results = []
@@ -389,8 +388,8 @@ for result in all_results:
     main_old_fact = check["old_fact_preferred"]
     paraphrase_ratio = check["paraphrase_old_fact_preferred_ratio"]
     ground_truth = result["ground_truth"].lower()
-    generation_main_old = (ground_truth in result["main_prompt"]["before"].lower())
-    generation_paraphrase_count = sum(ground_truth in item["answer"].lower()for item in result["paraphrases"]["before"])
+    generation_main_old = (ground_truth.lower() in result["main_prompt"]["before"].lower())
+    generation_paraphrase_count = sum(ground_truth.lower() in item["answer"].lower() for item in result["paraphrases"]["before"])
     generation_paraphrase_ratio = (generation_paraphrase_count / len(result["paraphrases"]["before"]))
 
 
